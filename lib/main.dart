@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
         );
         return;
       }
-
+      //! with network turned off, on windows,  after this function the app crashes 
       final position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high,
       );
